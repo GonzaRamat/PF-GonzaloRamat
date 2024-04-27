@@ -1,0 +1,73 @@
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%; 
+    padding: 0rem 1rem}
+
+    .eventos {
+        display: grid;
+        width: 100%; 
+        height: 100%; 
+        position: relative;  
+        padding: 40px;}
+    
+    .eventos video {
+        height: 600px; 
+        width: 100%;  
+        object-fit: cover; 
+        border-radius: 30px;}
+    
+    .eventoscard {
+        position: absolute; 
+        margin-top: 60px; 
+        width: 100%;}
+    
+    .eventos h1{
+        color:  rgb(239, 252, 65); 
+        font-weight: bold;
+        font-size: 3vw;
+        text-align: center; 
+        padding-bottom: 20px; 
+        font-style: oblique; 
+        background-color: rgba(0, 0, 0, 0.326);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    
+     .eventos p {
+        color: rgb(255, 255, 255); 
+        text-align: center; 
+        font-size: 2vw; 
+        padding-bottom: 80px; 
+        padding-left: 50px; 
+        padding-right: 50px; 
+        font-style: oblique; 
+        background-color: rgba(0, 0, 0, 0.326);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+    
+    
+    .carrusel {
+        width: 80%; 
+        height: 400px; 
+        padding: 40px; 
+        margin-left: 10%;}
+    
+    .carrusel h2 {
+        text-align: center; 
+        padding: 10px; 
+        font-size: 3vw; 
+        font-style: oblique;}
+    
+    .carrusel img {
+        width: 100%;
+        height: 500px; 
+        object-fit: cover; 
+        border-radius: 20px;}
+    
+    .main-eventos {
+        height: 800px;}
+    
+.contacto-index ul li {
+    display: block;
+    font-size: 50px solid;
+    text-align: center;
+    color: rgba(177, 186, 193, 0.502);
+    list-style-type: none; 
+    padding: 20px;}

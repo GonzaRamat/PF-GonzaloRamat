@@ -1,642 +1,773 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html {font-size: 62,5%}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html {
+  font-size: 62, 5%;
+}
 
 header {
-    height: 9rem; 
-    background-color: black;
+  height: 9rem;
+  background-color: black;
 }
 
 .navegador {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    height: 30rem;
-    background-repeat: no-repeat;
-    width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    height: 9rem;
-    background-color: black;
-    position: fixed;
-    z-index: 4;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  height: 30rem;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 9rem;
+  background-color: black;
+  position: fixed;
+  z-index: 4;
 }
-.navegador div { 
-    display: flex;
-    height: 9rem;
-    width: 20%;
+
+.navegador div {
+  display: flex;
+  height: 9rem;
+  width: 20%;
 }
-.navegador div img { 
-    display: flex;
-    height: 9rem; 
-    width: 100%;}
+
+.navegador div img {
+  display: flex;
+  height: 9rem;
+  width: 100%;
+}
 
 .navegador ul {
-     display: flex;
-     width: 70%; 
-     height: 100%;
-     align-items:center; 
-     justify-content: space-between;
-     margin-left: 2rem;}
-
+  display: flex;
+  width: 70%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
 
 .navegador ul li {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    font-weight: bold;
-    text-align: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
 }
 
-.navegador ul li a {display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    color: rgb(204, 203, 203);
-    font-size: 24px solid 1rem;
+.navegador ul li a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: rgb(204, 203, 203);
+  font-size: 24px solid 1rem;
 }
-.abrir-menu {display: none;}
+
+.abrir-menu {
+  display: none;
+}
+
+.navbar-brand img {
+  height: 6rem;
+  padding: 0;
+  width: 150px;
+  object-fit: cover;
+}
+
+.footer {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer p {
+  color: rgba(240, 248, 255, 0.349);
+  font-size: 20px;
+}
 
 body {
-    background-color: rgb(0, 0, 0);
-    width: 100%; 
-    padding: 0rem 1rem}
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
 
 .presentacion {
-    display: inline-block;
-    width: 100%;
-    position: relative; 
-    padding: 10px;}
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 10px;
+}
 
 .presentacion img {
-    width: 50%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 20px;}
- 
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 .presentacion-content {
-    padding: 20px;
-    display: inline-block;
-    width: 40% ;
-    position: absolute;
-    top: 5px;
-    left: 55%;}
+  padding: 20px;
+  display: inline-block;
+  width: 40%;
+  position: absolute;
+  top: 5px;
+  left: 55%;
+}
 
 .presentacion-content h1 {
-    padding-bottom: 10px;
-    color: rgb(239, 252, 65); 
-    display: inline-block; 
-    text-align: center; 
-    font-size: 2.5vw;
-    font-style: oblique;}
+  padding-bottom: 10px;
+  color: rgb(239, 252, 65);
+  display: inline-block;
+  text-align: center;
+  font-size: 2.5vw;
+  font-style: oblique;
+}
 
 .presentacion-content p {
-    color: aliceblue; 
-    display: inline-block; 
-    text-align: justify; 
-    font-size: 1.7vw}
+  color: aliceblue;
+  display: inline-block;
+  text-align: justify;
+  font-size: 1.7vw;
+}
 
 .barradetragos {
-    display: inline-block;
-    width: 100%;
-    position: relative; 
-    height: 500px;}
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
 
 .barradetragos img {
-    width: 40%;
-    height: 80%;
-    object-fit: cover;
-    position: absolute;
-    left: 55%; 
-    top: 80px; 
-    border-radius: 20px;}
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  left: 55%;
+  top: 80px;
+  border-radius: 20px;
+}
 
 .barradetragos-content {
-    display: inline-block;
-    width: 48% ;
-    position: absolute;
-    top: 3rem;
-    padding: 20px;}
+  display: inline-block;
+  width: 48%;
+  position: absolute;
+  top: 3rem;
+  padding: 20px;
+}
 
 .barradetragos-content h2 {
-    font-style: oblique;
-    font-size: 2.5vw; 
-    text-align: center; 
-    padding-bottom: 10px; 
-    color:  rgb(239, 252, 65);}
+  font-style: oblique;
+  font-size: 2.5vw;
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(239, 252, 65);
+}
 
 .barradetragos-content p {
-    font-size: 1.7vw; 
-    text-align: justify; 
-    padding: 0px; 
-    color: aliceblue;}
+  font-size: 1.7vw;
+  text-align: justify;
+  padding: 0px;
+  color: aliceblue;
+}
 
 .barradevinos {
-    display: inline-block;
-    width: 100%;
-    position: relative; 
-    height: 500px ;}
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  height: 500px;
+}
 
-.barradevinos-content{
-    display: inline-block;
-    width: 48% ;
-    position: absolute;
-    top: 3rem; }
+.barradevinos-content {
+  display: inline-block;
+  width: 48%;
+  position: absolute;
+  top: 3rem;
+}
 
 .barradevinos img {
-    width: 40%;
-    height: 80%;
-    object-fit: cover;
-    position: absolute;
-    left: 55%; 
-    top: 80px; 
-    border-radius: 20px;}
+  width: 40%;
+  height: 80%;
+  object-fit: cover;
+  position: absolute;
+  left: 55%;
+  top: 80px;
+  border-radius: 20px;
+}
 
-.barradevinos-content h2{
-    font-style: oblique;
-    font-size: 2.5vw; 
-    text-align: center;
-    padding-bottom: 10px; 
-    color:  rgb(239, 252, 65);}
+.barradevinos-content h2 {
+  font-style: oblique;
+  font-size: 2.5vw;
+  text-align: center;
+  padding-bottom: 10px;
+  color: rgb(239, 252, 65);
+}
 
 .barradevinos-content p {
-    font-size: 1.7vw; 
-    text-align: justify; 
-    padding: 0px; 
-    color: aliceblue;}
+  font-size: 1.7vw;
+  text-align: justify;
+  padding: 0px;
+  color: aliceblue;
+}
 
-.titulotestimonio{
-    text-align: center; 
-    padding-bottom: 40px; 
-    font-size: 5vw; 
-    color: aliceblue;}
+.titulotestimonio {
+  text-align: center;
+  padding-bottom: 40px;
+  font-size: 5vw;
+  color: aliceblue;
+}
 
 .testimonios {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
-    gap: 10px;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 10px;
 }
 
 .testimonio-item {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    background-color: rgba(86, 93, 93, 0.479); 
-    border-radius: 20px;}
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(86, 93, 93, 0.479);
+  border-radius: 20px;
+}
 
 .testimonio-item h3 {
-    font-size: 20rem solid; 
-    padding-bottom: 1rem;}
+  font-size: 20rem solid;
+  padding-bottom: 1rem;
+}
 
-.testimonio-item p{
-    font-size: 20px; 
-    text-align: center;}
+.testimonio-item p {
+  font-size: 20px;
+  text-align: center;
+}
 
 .testimonio-item img {
-    width: 60%; 
-    height: 60%;
-    object-fit: cover;}
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+}
 
 .contacto-index ul li {
-    display: block;
-    font-size: 50px solid;
-    text-align: center;
-    color: rgba(177, 186, 193, 0.502);
-    list-style-type: none; 
-    padding: 20px;}
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
+}
 
-.footer{
-    text-align: center; 
-    padding-top: 30px;}    
-
-.footer p{
-    color: rgba(240, 248, 255, 0.349); 
-    font-size: 20px}
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
 
 .cocktail {
-    display: grid;
-    width: 100%; 
-    height: 100%;
-    position: relative;}
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .cocktail img {
-    height: 40vw; 
-    width: 100%;}
-
-.cocktailcard{
-    position: absolute; 
-    margin-top: 6%;}
-
-
-.cocktail h1{
-    color:  rgb(239, 252, 65); 
-    font-weight: bold;
-    font-size: 3vw;
-    text-align: center; 
-    padding-bottom: 20px; 
-    font-style: oblique; 
-    background-color: rgba(0, 0, 0, 0.653)}
-
-
-.cocktail p{
-    color: rgb(155, 150, 150); 
-    text-align: center; 
-    font-size: 2vw; 
-    padding-bottom: 80px; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-    font-style: oblique; 
-    font-weight: bold; 
-    background-color: rgba(0, 0, 0, 0.653)}
-
-
-.bebidas{
-    display: grid; 
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    grid-template-rows: auto;
-    padding: 10px;
-    justify-content: space-between;
-    gap: 20px; 
-    transition: 0.5s;
+  height: 40vw;
+  width: 100%;
 }
 
-.bebidas :hover { 
-    background-color: rgb(50, 49, 49); 
-    border-radius: 10px;}
-
-
-.bebidas-item{
-    display: flex;
-    flex-direction: column; 
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    padding:30px;
-    align-items: center; 
-    position: relative;
+.cocktailcard {
+  position: absolute;
+  margin-top: 6%;
 }
 
-.bebidas-item h3{
-    color: rgba(226, 241, 11, 0.719); 
-    font-size: 3vw;
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
-    margin-bottom: 30px;}
+.cocktail h1 {
+  color: rgb(239, 252, 65);
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 20px;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.cocktail p {
+  color: rgb(155, 150, 150);
+  text-align: center;
+  font-size: 2vw;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.bebidas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  padding: 10px;
+  justify-content: space-between;
+  gap: 20px;
+  transition: 0.5s;
+}
+
+.bebidas :hover {
+  background-color: rgb(50, 49, 49);
+  border-radius: 10px;
+}
+
+.bebidas-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+  align-items: center;
+  position: relative;
+}
+
+.bebidas-item h3 {
+  color: rgba(226, 241, 11, 0.719);
+  font-size: 3vw;
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin-bottom: 30px;
+}
 
 .bebidas-item img {
-    display: flex; 
-    height: 200px;
-    width: 200px;
-    border-radius: 1rem;
-    object-fit: cover;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
 .bebidas-item img :hover {
-    filter: blur(1px);}
-
-.bebidas-item h2{
-    color: rgba(226, 241, 11, 0.719); 
-    font-size: 30px;
-    display: flex;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-align: center; margin-top: 20px;
-
+  filter: blur(1px);
 }
 
-
-.complemento-cockatil{
-    color: aliceblue;
-    font-size: 2vw;
-    padding: 20px; 
-    margin-top: 40px;
-    font-style: oblique; 
-    text-align: center;}
-
-
-.mocktail {
-    display: grid;
-    width: 100%; 
-    height: 100%; 
-    position: relative;}
-
-.mocktail img {
-    height: 600px; 
-    width: 100%;}
-
-.mocktailcard{
-    position: absolute; 
-    margin-top: 6%;}
-
-.texto {
-    color: rgb(155, 150, 150); 
-    text-align: center; 
-    font-size: 1.5vw; 
-    padding-bottom: 80px; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-    font-style: oblique; 
-    font-weight: bold; 
-    background-color: rgba(0, 0, 0, 0.653);}
-
-.mocktailcard h2 {
-    color: aliceblue;}
-
-.mocktail h1{
-    color:  rgb(239, 252, 65); 
-    font-weight: bold;
-    font-size: 3vw;
-    text-align: center; 
-    padding-bottom: 3%; 
-    font-style: oblique; 
-    background-color: rgba(0, 0, 0, 0.653)}
-
-
-.mocktail p {
-    color: rgb(155, 150, 150); 
-    text-align: center; 
-    font-size: 2vw; 
-    padding-bottom: 5%; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-    font-style: oblique; 
-    font-weight: bold; 
-    background-color: rgba(0, 0, 0, 0.653);}
-
-
-.eventos {
-    display: grid;
-    width: 100%; 
-    height: 100%; 
-    position: relative;  
-    padding: 40px;}
-
-.eventos video {
-    height: 600px; 
-    width: 100%;  
-    object-fit: cover; 
-    border-radius: 30px;}
-
-.eventoscard {
-    position: absolute; 
-    margin-top: 60px; 
-    width: 100%;}
-
-.eventos h1{
-    color:  rgb(239, 252, 65); 
-    font-weight: bold;
-    font-size: 3vw;
-    text-align: center; 
-    padding-bottom: 20px; 
-    font-style: oblique; 
-    background-color: rgba(0, 0, 0, 0.326);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
- .eventos p {
-    color: rgb(255, 255, 255); 
-    text-align: center; 
-    font-size: 2vw; 
-    padding-bottom: 80px; 
-    padding-left: 50px; 
-    padding-right: 50px; 
-    font-style: oblique; 
-    background-color: rgba(0, 0, 0, 0.326);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-
-
-.carrusel {
-    width: 80%; 
-    height: 400px; 
-    padding: 40px; 
-    margin-left: 10%;}
-
-.carrusel h2 {
-    text-align: center; 
-    padding: 10px; 
-    font-size: 3vw; 
-    font-style: oblique;}
-
-.carrusel img {
-    width: 100%;
-    height: 500px; 
-    object-fit: cover; 
-    border-radius: 20px;}
-
-.main-eventos {
-    height: 800px;}
-
-.navbar-brand img {
-    height: 6rem; 
-    padding: 0; 
-    width:  150px; 
-    object-fit: cover;}
-
-.presentacion-faqs {
-    text-align: center; 
-    padding: 20px;
-    color: rgba(240, 248, 255, 0.484);
-    font-style: oblique;
-    font-size: 3vw;}
-
-.faqs {
-    display: grid;
-    position: relative;}
-
-.faqscard {
-    background-color: rgba(0, 0, 0, 0.443);
-    position: absolute; 
-    color: rgba(255, 255, 255, 0.671);
-    font-size: 2vw;
-    padding: 50px; 
-    font-weight: bold; 
-    margin-top: 30px;}
-
-.faqscard h3 { 
-    padding: 20px;}
-
-.faqs img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;}
-
-.contacto{
-    display: grid;
-    position: relative;
-
+.bebidas-item h2 {
+  color: rgba(226, 241, 11, 0.719);
+  font-size: 30px;
+  display: flex;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 20px;
 }
 
-.contacto-card{
-    background-color: rgba(0, 0, 0, 0.443);
-    position: absolute; 
-    color: rgba(233, 227, 47, 0.902);
-    font-size: 2vw;
-    padding: 50px; 
-    font-weight: bold; 
-    margin-top: 2rem;
-    width: 100%;
+.complemento-cockatil {
+  color: aliceblue;
+  font-size: 2vw;
+  padding: 20px;
+  margin-top: 40px;
+  font-style: oblique;
+  text-align: center;
+}
+
+.contacto-index ul li {
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.contacto {
+  display: grid;
+  position: relative;
+}
+
+.contacto-card {
+  background-color: rgba(0, 0, 0, 0.443);
+  position: absolute;
+  color: rgba(233, 227, 47, 0.902);
+  font-size: 2vw;
+  padding: 50px;
+  font-weight: bold;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .contacto-card h1 {
-    font-size: 6vw;
+  font-size: 6vw;
 }
 
 .contacto-card h2 {
-    margin-top: 3rem;
-    font-size: 4.5vw;
+  margin-top: 3rem;
+  font-size: 4.5vw;
 }
 
-.contacto-card p{
-    margin-top: 4rem;
+.contacto-card p {
+  margin-top: 4rem;
 }
-
 
 .contacto img {
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
 }
 
 .horarios {
-    display: grid;
-    position: relative;
-    color: white;
-    text-align: center;
-    width: 100%;
+  display: grid;
+  position: relative;
+  color: white;
+  text-align: center;
+  width: 100%;
 }
 
 .horarios-card {
-    background-color: rgba(0, 0, 0, 0.443);
-    position: absolute; 
-    color: rgba(233, 227, 47, 0.902);
-    font-size: 2vw;
-    padding: 50px; 
-    font-weight: bold; 
-    margin-top: 2rem;
-    width: 100%;
+  background-color: rgba(0, 0, 0, 0.443);
+  position: absolute;
+  color: rgba(233, 227, 47, 0.902);
+  font-size: 2vw;
+  padding: 50px;
+  font-weight: bold;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-.horarios img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-
+.horarios img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
+
 .horarios ul {
-    list-style: none;
-    padding: 20px;
+  list-style: none;
+  padding: 20px;
 }
 
-.formulario {display: grid;
-    background-color: rgba(255, 255, 255, 0.057);
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+.formulario {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.057);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .formulario-presentacion {
-    color: white;
-    width: 40%;
-    padding: 10px;
-}
-.formulario-input {
-    width: 50%;
+  color: white;
+  width: 40%;
+  padding: 10px;
 }
 
-.info-formulario{
-    color: white;
-    font-size: 16px;
-    gap: 20px;
-    width: 50%;
+.formulario-input {
+  width: 50%;
+}
+
+.info-formulario {
+  color: white;
+  font-size: 16px;
+  gap: 20px;
+  width: 50%;
 }
 
 .formulario label {
-    padding: 5px;
+  padding: 5px;
 }
 
 .maps {
-    width: 20%;
+  width: 20%;
+}
+
+.contacto-index ul li {
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.mocktail {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mocktail img {
+  height: 600px;
+  width: 100%;
+}
+
+.mocktailcard {
+  position: absolute;
+  margin-top: 6%;
+}
+
+.texto {
+  color: rgb(155, 150, 150);
+  text-align: center;
+  font-size: 1.5vw;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.mocktailcard h2 {
+  color: aliceblue;
+}
+
+.mocktail h1 {
+  color: rgb(239, 252, 65);
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 3%;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.mocktail p {
+  color: rgb(155, 150, 150);
+  text-align: center;
+  font-size: 2vw;
+  padding-bottom: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.653);
+}
+
+.contacto-index ul li {
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.eventos {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 40px;
+}
+
+.eventos video {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.eventoscard {
+  position: absolute;
+  margin-top: 60px;
+  width: 100%;
+}
+
+.eventos h1 {
+  color: rgb(239, 252, 65);
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  padding-bottom: 20px;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.326);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.eventos p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 2vw;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-style: oblique;
+  background-color: rgba(0, 0, 0, 0.326);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.carrusel {
+  width: 80%;
+  height: 400px;
+  padding: 40px;
+  margin-left: 10%;
+}
+
+.carrusel h2 {
+  text-align: center;
+  padding: 10px;
+  font-size: 3vw;
+  font-style: oblique;
+}
+
+.carrusel img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.main-eventos {
+  height: 800px;
+}
+
+.contacto-index ul li {
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+.presentacion-faqs {
+  text-align: center;
+  padding: 20px;
+  color: rgba(240, 248, 255, 0.484);
+  font-style: oblique;
+  font-size: 3vw;
+}
+
+.faqs {
+  display: grid;
+  position: relative;
+}
+
+.faqscard {
+  background-color: rgba(0, 0, 0, 0.443);
+  position: absolute;
+  color: rgba(255, 255, 255, 0.671);
+  font-size: 2vw;
+  padding: 50px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.faqscard h3 {
+  padding: 20px;
+}
+
+.faqs img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contacto-index ul li {
+  display: block;
+  font-size: 50px solid;
+  text-align: center;
+  color: rgba(177, 186, 193, 0.502);
+  list-style-type: none;
+  padding: 20px;
 }
 
 @media (max-width: 900px) {
-    .presentacion img {
-        width: 100%; 
-        height: 300px;}
-   
-    .maps iframe {
-        min-width: 300px;
-        max-width: 100%;}
-
-    .presentacion-content {
-         padding: 20px;
-         position: absolute;
-         background-color: rgba(0, 0, 0, 0.379);
-         left: 0%;
-         top: 5px;
-         width: 100%;
-         margin: auto;
-        }
-
-        .barradetragos {
-            display: inline-block;
-            width: 100%;
-            position: relative; 
-            padding: 10px; 
-            height: 400px;}
-
-        .barradetragos img {
-            width: 100%; 
-            position: absolute; 
-            left: 0%; 
-            top: 10px; }
-
-        .barradetragos-content{
-            z-index: 1; 
-            padding: 20px;
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.379);
-            left: 0%;
-            top: 5px;
-            width: 100%;
-            margin: auto;}
-
-           .barradetragos-content p{
-            position: absolute;
-            z-index: 1; 
-            width: 80%; 
-            background-color: rgba(0, 0, 0, 0.379)}
-
-            .barradevinos {
-            display: inline-block;
-            width: 100%;
-            position: relative; 
-            padding: 10px; 
-            height: 400px;}
-
-            .barradevinos img {
-            width: 100%; 
-            position: absolute; 
-            left: 0%; 
-            top: 10px; }
-
-            .barradevinos-content {
-            z-index: 1; 
-            padding: 20px;
-            position: absolute;
-            background-color: rgba(0, 0, 0, 0.379);
-            left: 0%;
-            top: 5px;
-            width: 100%;
-            margin: auto;}
-
-            .cocktail img {
-                height: 50vw;}
-
-
-            .mocktail img {
-                height: 50vw;}
-
+  .presentacion img {
+    width: 100%;
+    height: 300px;
+  }
+  .maps iframe {
+    min-width: 300px;
+    max-width: 100%;
+  }
+  .presentacion-content {
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.379);
+    left: 0%;
+    top: 5px;
+    width: 100%;
+    margin: auto;
+  }
+  .barradetragos {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    height: 400px;
+  }
+  .barradetragos img {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 10px;
+  }
+  .barradetragos-content {
+    z-index: 1;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.379);
+    left: 0%;
+    top: 5px;
+    width: 100%;
+    margin: auto;
+  }
+  .barradetragos-content p {
+    position: absolute;
+    z-index: 1;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.379);
+  }
+  .barradevinos {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+    height: 400px;
+  }
+  .barradevinos img {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 10px;
+  }
+  .barradevinos-content {
+    z-index: 1;
+    padding: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.379);
+    left: 0%;
+    top: 5px;
+    width: 100%;
+    margin: auto;
+  }
+  .cocktail img {
+    height: 50vw;
+  }
+  .mocktail img {
+    height: 50vw;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */

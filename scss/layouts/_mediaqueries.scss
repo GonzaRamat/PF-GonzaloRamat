@@ -1,0 +1,79 @@
+  @media (max-width: 900px) {
+        .presentacion img {
+            width: 100%; 
+            height: 300px;}
+       
+        .maps iframe {
+            min-width: 300px;
+            max-width: 100%;}
+    
+        .presentacion-content {
+             padding: 20px;
+             position: absolute;
+             background-color: rgba(0, 0, 0, 0.379);
+             left: 0%;
+             top: 5px;
+             width: 100%;
+             margin: auto;
+            }
+    
+            .barradetragos {
+                display: inline-block;
+                width: 100%;
+                position: relative; 
+                padding: 10px; 
+                height: 400px;}
+    
+            .barradetragos img {
+                width: 100%; 
+                position: absolute; 
+                left: 0%; 
+                top: 10px; }
+    
+            .barradetragos-content{
+                z-index: 1; 
+                padding: 20px;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.379);
+                left: 0%;
+                top: 5px;
+                width: 100%;
+                margin: auto;}
+    
+               .barradetragos-content p{
+                position: absolute;
+                z-index: 1; 
+                width: 80%; 
+                background-color: rgba(0, 0, 0, 0.379)}
+    
+                .barradevinos {
+                display: inline-block;
+                width: 100%;
+                position: relative; 
+                padding: 10px; 
+                height: 400px;}
+    
+                .barradevinos img {
+                width: 100%; 
+                position: absolute; 
+                left: 0%; 
+                top: 10px; }
+    
+                .barradevinos-content {
+                z-index: 1; 
+                padding: 20px;
+                position: absolute;
+                background-color: rgba(0, 0, 0, 0.379);
+                left: 0%;
+                top: 5px;
+                width: 100%;
+                margin: auto;}
+    
+                .cocktail img {
+                    height: 50vw;}
+    
+    
+                .mocktail img {
+                    height: 50vw;}
+    
+    }

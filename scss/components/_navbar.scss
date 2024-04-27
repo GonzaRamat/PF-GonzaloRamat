@@ -1,0 +1,57 @@
+header {
+    height: 9rem; 
+    background-color: black;
+}
+.navegador {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    height: 30rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 9rem;
+    background-color: black;
+    position: fixed;
+    z-index: 4;
+}
+.navegador div { 
+    display: flex;
+    height: 9rem;
+    width: 20%;
+}
+.navegador div img { 
+    display: flex;
+    height: 9rem; 
+    width: 100%;}
+
+.navegador ul {
+     display: flex;
+     width: 70%; 
+     height: 100%;
+     align-items:center; 
+     justify-content: space-between;
+     margin-left: 2rem;}
+
+
+.navegador ul li {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navegador ul li a {display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: rgb(204, 203, 203);
+    font-size: 24px solid 1rem;
+}
+.abrir-menu {display: none;}
+
+.navbar-brand img {
+    height: 6rem; 
+    padding: 0; 
+    width:  150px; 
+    object-fit: cover;}
