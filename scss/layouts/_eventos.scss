@@ -8,41 +8,42 @@ body {
         width: 100%; 
         height: 100%; 
         position: relative;  
-        padding: 40px;}
-    
-    .eventos video {
-        height: 600px; 
-        width: 100%;  
-        object-fit: cover; 
-        border-radius: 30px;}
-    
-    .eventoscard {
-        position: absolute; 
-        margin-top: 60px; 
-        width: 100%;}
-    
-    .eventos h1{
-        color:  rgb(239, 252, 65); 
-        font-weight: bold;
-        font-size: 3vw;
-        text-align: center; 
-        padding-bottom: 20px; 
-        font-style: oblique; 
-        background-color: rgba(0, 0, 0, 0.326);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
-    
-     .eventos p {
-        color: rgb(255, 255, 255); 
-        text-align: center; 
-        font-size: 2vw; 
-        padding-bottom: 80px; 
-        padding-left: 50px; 
-        padding-right: 50px; 
-        font-style: oblique; 
-        background-color: rgba(0, 0, 0, 0.326);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+        padding: 40px;
+        video {
+            height: 600px; 
+            width: 100%;  
+            object-fit: cover; 
+            border-radius: 30px;}
+        .eventoscard {
+            position: absolute; 
+            margin-top: 60px; 
+            width: 100%;
+                h1{
+                color:  rgb(239, 252, 65); 
+                font-weight: bold;
+                font-size: 3vw;
+                text-align: center; 
+                padding-bottom: 20px; 
+                font-style: oblique; 
+                background-color: rgba(0, 0, 0, 0.326);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+                p {
+                color: rgba(0, 0, 0, 0.358); 
+                text-align: center; 
+                font-size: 2vw; 
+                padding-bottom: 80px; 
+                padding-left: 50px; 
+                padding-right: 50px; 
+                font-style: oblique; 
+                background-color: rgba(0, 0, 0, 0.326);
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}            
+            }
+        }
     
     
+    
+    
+     
     .carrusel {
         width: 80%; 
         height: 400px; 

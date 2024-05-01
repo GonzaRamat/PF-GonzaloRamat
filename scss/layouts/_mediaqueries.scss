@@ -1,79 +1,100 @@
-  @media (max-width: 900px) {
-        .presentacion img {
-            width: 100%; 
-            height: 300px;}
+  @media(max-width: 900px) {
+
+
+    .presentacion {
+                    width: 100%; height: 400px;
+                     img {
+                          width: 100%; 
+                          height: 350px;}
+                     .presentacion-content {
+                             padding: 20px;
+                             position: absolute;
+                             background-color: rgba(0, 0, 0, 0.379);
+                             left: 0%;
+                             top: 5px;
+                             width: 100%;
+                             margin: auto;
+                             height: 350px;
+                                             }
+                 }
+
        
-        .maps iframe {
+    .maps iframe {
             min-width: 300px;
             max-width: 100%;}
     
-        .presentacion-content {
-             padding: 20px;
-             position: absolute;
-             background-color: rgba(0, 0, 0, 0.379);
-             left: 0%;
-             top: 5px;
-             width: 100%;
-             margin: auto;
-            }
+        
     
-            .barradetragos {
+    .barradetragos {
                 display: inline-block;
                 width: 100%;
                 position: relative; 
                 padding: 10px; 
-                height: 400px;}
-    
-            .barradetragos img {
-                width: 100%; 
-                position: absolute; 
-                left: 0%; 
-                top: 10px; }
-    
-            .barradetragos-content{
-                z-index: 1; 
-                padding: 20px;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.379);
-                left: 0%;
-                top: 5px;
-                width: 100%;
-                margin: auto;}
-    
-               .barradetragos-content p{
-                position: absolute;
-                z-index: 1; 
-                width: 80%; 
-                background-color: rgba(0, 0, 0, 0.379)}
+                height: 450px;
+                img {
+                    width: 100%; 
+                    position: absolute; 
+                    left: 0%; 
+                    top: 10px;
+                    height: 450px;}
+                .barradetragos-content{
+                    z-index: 1; 
+                    padding: 10px;
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, 0.379);
+                    left: 0%;
+                    top: 5px;
+                    width: 90%;
+                    margin: auto;
+                        
+                    h2{padding-bottom: 10px;}
+                    p{
+                        position: absolute;
+                        z-index: 1; 
+                        width: 100%; 
+                        background-color: rgba(0, 0, 0, 0.379);}
+                    }
+        }
+         
     
                 .barradevinos {
                 display: inline-block;
                 width: 100%;
                 position: relative; 
                 padding: 10px; 
-                height: 400px;}
-    
-                .barradevinos img {
-                width: 100%; 
-                position: absolute; 
-                left: 0%; 
-                top: 10px; }
-    
+                height: 500px;
+                img {
+                    width: 100%; 
+                    position: absolute; 
+                    left: 0%; 
+                    top: 10px; }
                 .barradevinos-content {
-                z-index: 1; 
-                padding: 20px;
-                position: absolute;
-                background-color: rgba(0, 0, 0, 0.379);
-                left: 0%;
-                top: 5px;
-                width: 100%;
-                margin: auto;}
+                        z-index: 1; 
+                        padding: 20px;
+                        position: absolute;
+                        background-color: rgba(0, 0, 0, 0.379);
+                        left: 0%;
+                        top: 5px;
+                        width: 100%;
+                        margin: auto;}}
+
     
-                .cocktail img {
-                    height: 50vw;}
+                .cocktail {padding: 0;
+                           width: 100%;
+                            img {
+                            height: 520px;
+                        object-fit: cover;}
+                            .cocktailcard {  p: {padding: 0px;
+                                margin: 0px;
+                            width: 100%;}
+              }}
     
+               .contacto-index ul {padding: 0px;}
     
                 .mocktail img {
-                    height: 50vw;}
+                    height:500px;
+                object-fit: cover;
+            }
+                 
     
     }
