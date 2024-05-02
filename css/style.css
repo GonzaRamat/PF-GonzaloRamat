@@ -340,33 +340,33 @@ header {
 .contacto {
   display: grid;
   position: relative;
+  width: 100%;
 }
 .contacto img {
   width: 100%;
-  height: 600px;
+  height: 800px;
   object-fit: cover;
 }
 .contacto .contacto-card {
-  background-color: rgba(0, 0, 0, 0.443);
+  background-color: rgba(0, 0, 0, 0.635);
   position: absolute;
-  font-size: 16px;
-  padding: 50px;
   font-weight: bold;
   margin-top: 2rem;
   width: 100%;
 }
 .contacto .contacto-card h1 {
-  font-size: 25px;
+  font-size: 30px;
   color: rgb(239, 252, 65);
 }
 .contacto .contacto-card h2 {
   margin-top: 3rem;
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(233, 227, 47, 0.902);
 }
 .contacto .contacto-card p {
   margin-top: 4rem;
   color: rgba(215, 211, 211, 0.769);
+  font-size: 20px;
 }
 
 .horarios {
@@ -378,11 +378,11 @@ header {
 }
 .horarios img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 .horarios .horarios-card {
-  background-color: rgba(0, 0, 0, 0.443);
+  background-color: rgba(0, 0, 0, 0.635);
   position: absolute;
   color: rgba(215, 211, 211, 0.769);
   font-size: 2vw;
@@ -401,7 +401,7 @@ header {
 .formulario {
   display: grid;
   background-color: rgba(255, 255, 255, 0.057);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 .formulario .formulario-presentacion {
   color: white;
@@ -627,7 +627,7 @@ body {
     height: 350px;
   }
   .maps iframe {
-    min-width: 300px;
+    min-width: 25 0px;
     max-width: 100%;
   }
   .barradetragos {

@@ -4,29 +4,27 @@
 .contacto{
         display: grid;
         position: relative;
-        img {@include img (100%,600px,cover);}    
+        width: 100%;
+        img {@include img (100%,800px,cover);}    
 
         .contacto-card{
-            background-color: rgba(0, 0, 0, 0.443);
+            background-color: rgba(0, 0, 0, 0.635);
             position: absolute; 
-           
-            font-size: 16px;
-            padding: 50px; 
             font-weight: bold; 
             margin-top: 2rem;
             width: 100%;
             h1 {
-                font-size: 25px;
+                font-size: 30px;
                 color: $title-color;
             }
             h2 {
                 margin-top: 3rem;
-                font-size: 20px;
+                font-size: 25px;
                 color: rgba(233, 227, 47, 0.902);
             }
             p{
                 margin-top: 4rem;
-                color: $text-color;
+                color: $text-color;font-size: 20px;
             }
         }
     
@@ -38,9 +36,9 @@
         color: white;
         text-align: center;
         width: 100%;
-        img{@include img (100%,400px,cover);}
-        .horarios-card {
-            background-color: rgba(0, 0, 0, 0.443);
+        img{@include img (100%,500px,cover);}
+    .horarios-card {
+            background-color:rgba(0, 0, 0, 0.635);
             position: absolute; 
             color: $text-color;
             font-size: 2vw;
@@ -60,7 +58,7 @@
     
     .formulario {display: grid;
         background-color: rgba(255, 255, 255, 0.057);
-        grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
         .formulario-presentacion {
             color: white;
             width: 40%;
