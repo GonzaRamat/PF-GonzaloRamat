@@ -17,7 +17,7 @@
                              height: 350px;
                                              }
                  }
-
+                 
        
     .maps iframe {
             min-width: 300px;
@@ -92,9 +92,21 @@
                .contacto-index ul {padding: 0px;}
     
                 .mocktail img {
-                    height:500px;
+                    height:550px;
                 object-fit: cover;
             }
                  
-    
+    .eventos {height: 700px;
+        video{height: 700px;}
+        .eventoscard {width: auto; margin: 40px; margin-top: 80px;}
     }
+
+    .carrusel{height: 500px;
+        img{height: 300px}; object-fit: cover;}
+
+
+
+    .faqs {height: 700px;
+        img{height: 700px;}}
+
+    .faqscard {width: auto; height: 700px; padding: 0px;}    }

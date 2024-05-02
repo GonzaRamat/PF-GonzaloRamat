@@ -1,38 +1,35 @@
-body {
-    background-color: rgb(0, 0, 0);
-    width: 100%; 
-    padding: 0rem 1rem}
-
-    .presentacion {
+.presentacion {
                 display: inline-block;
                 width: 100%;
                 position: relative; 
                 padding: 10px;
                 overflow: auto;
 
-            img {
-                width: 50%;
-                height: 400px;
-                object-fit: cover;
+            img { @include img (50%,400px,cover);
                 border-radius: 20px;}
 
-            .presentacion-content 
-            {
+            .presentacion-content {
                 padding: 10px;
                 display: inline-block;
                 width: 40% ;
                 position: absolute;
                 top: 20%;
                 left: 55%;
+                .circle {
+                width: 80%;
+                height: 250px;
+                background-color: rgba(240, 248, 255, 0.495); filter:blur(100px);
+                border-radius: 100%; position: absolute;}
+
                 h1 {
                     padding-bottom: 5px;
-                    color: rgb(239, 252, 65); 
+                    color:$title-color; 
                     display: inline-block; 
                     text-align: center; 
                     font-size:25px;
                     font-style: oblique;}
                 p {
-                        color: aliceblue; 
+                        color:$text-color; 
                         display: inline-block; 
                         text-align: justify; 
                         font-size: 15px}
@@ -46,10 +43,7 @@ body {
             width: 100%;
             position: relative; 
             height: 500px;
-        img {
-            width: 40%;
-            height: 80%;
-            object-fit: cover;
+        img {@include img (40%,80%,cover);
             position: absolute;
             left: 55%; 
             top: 80px; 
@@ -62,17 +56,21 @@ body {
             position: absolute;
             top: 20%;
             padding: 20px;
+            .circle {width: 100%;
+                height: 250px;
+                background-color:rgba(240, 248, 255, 0.495); filter:blur(100px);
+                border-radius: 100%; position: absolute;left: 30%;}
                 h2 {
                     font-style: oblique;
                     font-size: 25px; 
                     text-align: center; 
                     padding-bottom: 10px; 
-                    color:  rgb(239, 252, 65);}
+                    color: $title-color;}
                 p {
                     font-size: 15px; 
                     text-align: justify; 
                     padding: 0px; 
-                    color: aliceblue;}
+                    color: $text-color;}
             }
         }
     
@@ -82,10 +80,7 @@ body {
             width: 100%;
             position: relative; 
             height: 500px ;
-        img {
-            width: 40%;
-            height: 80%;
-            object-fit: cover;
+        img {@include img (40%,80%,cover);
             position: absolute;
             left: 55%; 
             top: 80px; 
@@ -96,17 +91,21 @@ body {
             width: 48% ;
             position: absolute;
             top: 20%; 
+            .circle {width: 100%;
+                height: 250px;
+                background-color: rgba(240, 248, 255, 0.495); filter:blur(100px);
+                border-radius: 100%; position: absolute;left: 30%;}
                 h2{
                     font-style: oblique;
                     font-size: 25px; 
                     text-align: center;
                     padding-bottom: 10px; 
-                    color:  rgb(239, 252, 65);}
+                    color: $title-color;}
                 p {
                     font-size: 14px; 
                     text-align: justify; 
                     padding: 0px; 
-                    color: aliceblue;}
+                    color: $text-color;}
             }
         }
 
@@ -137,10 +136,7 @@ body {
                     font-size: 20px; 
                     text-align: center;}
 
-                img {
-                        width: 60%; 
-                        height: 60%;
-                        object-fit: cover;}
+                img {@include img (60%,60%,cover);}
                     }
     }
     

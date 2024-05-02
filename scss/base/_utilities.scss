@@ -1,0 +1,6 @@
+//mixin con parametros
+@mixin img($width,$height,$objet) {
+    width: $width;
+    height: $height;
+    object-fit: $objet;
+}

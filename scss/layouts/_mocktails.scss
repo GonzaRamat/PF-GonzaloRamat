@@ -9,26 +9,22 @@ body {
             width: 100%; 
             height: 100%; 
             position: relative;
-            img {
-            height: 400px; 
-            width: 100%;}
+            img {@include img (100%,450px,cover);}
             
             .mocktailcard{
             position: absolute; 
-            margin-top: 6%;
+            margin-top: 40px;
             h1{
-                color:  rgb(239, 252, 65); 
+                color:  $title-color; 
                 font-weight: bold;
                 font-size: 25px;
                 text-align: center; 
-                padding-bottom: 3%; 
                 font-style: oblique; 
                 background-color: rgba(0, 0, 0, 0.653)}
                 p {
-                    color: rgb(155, 150, 150); 
+                    color:$text-color; 
                     text-align: center; 
                     font-size: 18px; 
-                    padding-bottom: 5%; 
                     padding-left: 50px; 
                     padding-right: 50px; 
                     font-style: oblique; 
@@ -43,10 +39,12 @@ body {
             padding-right: 50px; 
             background-color: rgba(0, 0, 0, 0.653);
             h2 {font-style: oblique;
-                font-size: 25px; 
-                color: rgba(119, 147, 28, 0.646);}}}
+                margin-top: 40px;
+                font-size: 20px; 
+                color:$text-color;}}}
     
-        .cierre-mockatil{text-align: center;}
+        .cierre-mockatil{text-align: center; color: $text-color;
+        }
 
 .contacto-index ul li {
     display: block;
