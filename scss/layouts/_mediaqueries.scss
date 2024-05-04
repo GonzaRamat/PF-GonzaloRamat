@@ -15,7 +15,8 @@
                              width: 100%;
                              margin: auto;
                              height: 350px;
-                                             }
+                                             
+                             .circle {display:none}}
                  }
 
        
@@ -46,8 +47,9 @@
                     top: 5px;
                     width: 90%;
                     margin: auto;
+                    .circle {display:none}
                         
-                    h2{padding-bottom: 10px;}
+                    h2{padding-bottom: 10px; }
                     p{
                         position: absolute;
                         z-index: 1; 
@@ -76,13 +78,14 @@
                         left: 0%;
                         top: 5px;
                         width: 100%;
-                        margin: auto;}}
+                        margin: auto;}
+                        .circle {display:none}}
 
     
                 .cocktail {padding: 0;
                            width: 100%;
                             img {
-                            height: 520px;
+                            height: 550px;
                         object-fit: cover;}
                             .cocktailcard {  p: {padding: 0px;
                                 margin: 0px;

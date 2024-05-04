@@ -114,7 +114,7 @@ header {
 .barradetragos .barradetragos-content .circle {
   width: 100%;
   height: 250px;
-  background-color: rgba(240, 248, 255, 0.495);
+  background-color: rgba(253, 255, 240, 0.495);
   filter: blur(100px);
   border-radius: 100%;
   position: absolute;
@@ -280,14 +280,22 @@ header {
 }
 .bebidas .bebidas-item .ingredientes {
   position: absolute;
-  background-color: rgb(0, 0, 0);
   width: 100%;
   list-style-type: none;
-  height: 100%;
-  margin-top: 140px;
+  height: 300px;
+  margin-top: 160px;
   text-align: center;
-  right: 7%;
-  display: none;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.605);
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.646);
+}
+.bebidas .bebidas-item .ingredientes:hover {
+  opacity: 100;
+}
+.bebidas .bebidas-item:hover {
+  background-color: rgb(8, 8, 8);
+  border-radius: 10px;
 }
 .bebidas .bebidas-item h3 {
   color: rgba(226, 241, 11, 0.719);
@@ -304,9 +312,6 @@ header {
   display: flex;
   border-radius: 1rem;
 }
-.bebidas .bebidas-item img:hover {
-  filter: blur(1px);
-}
 .bebidas .bebidas-item h2 {
   color: rgba(226, 241, 11, 0.719);
   font-size: 30px;
@@ -314,10 +319,6 @@ header {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   margin-top: 20px;
-}
-.bebidas .bebidas-item:hover {
-  background-color: rgb(50, 49, 49);
-  border-radius: 10px;
 }
 
 .complemento-cockatil h2 {
@@ -626,6 +627,9 @@ body {
     margin: auto;
     height: 350px;
   }
+  .presentacion .presentacion-content .circle {
+    display: none;
+  }
   .maps iframe {
     min-width: 25 0px;
     max-width: 100%;
@@ -653,6 +657,9 @@ body {
     top: 5px;
     width: 90%;
     margin: auto;
+  }
+  .barradetragos .barradetragos-content .circle {
+    display: none;
   }
   .barradetragos .barradetragos-content h2 {
     padding-bottom: 10px;
@@ -686,12 +693,15 @@ body {
     width: 100%;
     margin: auto;
   }
+  .barradevinos .circle {
+    display: none;
+  }
   .cocktail {
     padding: 0;
     width: 100%;
   }
   .cocktail img {
-    height: 520px;
+    height: 550px;
     object-fit: cover;
   }
   .cocktail .cocktailcard {
