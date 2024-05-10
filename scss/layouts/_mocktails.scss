@@ -16,19 +16,17 @@ body {
             margin-top: 40px;
             h1{
                 color:  $title-color; 
-                font-weight: bold;
-                font-size: 25px;
+                font-size: 35px;
                 text-align: center; 
                 font-style: oblique; 
                 background-color: rgba(0, 0, 0, 0.653)}
                 p {
                     color:$text-color; 
                     text-align: center; 
-                    font-size: 18px; 
+                    font-size: 25px; 
                     padding-left: 50px; 
                     padding-right: 50px; 
                     font-style: oblique; 
-                    font-weight: bold; 
                     background-color: rgba(0, 0, 0, 0.653);}
           }
             .texto {
@@ -40,10 +38,10 @@ body {
             background-color: rgba(0, 0, 0, 0.653);
             h2 {font-style: oblique;
                 margin-top: 40px;
-                font-size: 20px; 
+                font-size: 25px; 
                 color:$text-color;}}}
     
-        .cierre-mockatil{text-align: center; color: $text-color;
+        .cierre-mockatil{text-align: center; color: $text-color; font-size: 25px; margin-top: 50px;
         }
 
 .contacto-index ul li {

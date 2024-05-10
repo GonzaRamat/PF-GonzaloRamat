@@ -3,7 +3,7 @@
                 width: 100%;
                 position: relative; 
                 padding: 10px;
-                overflow: auto;
+               
 
             img { @include img (50%,400px,cover);
                 border-radius: 20px;}
@@ -13,7 +13,7 @@
                 display: inline-block;
                 width: 40% ;
                 position: absolute;
-                top: 20%;
+                top: 10%;
                 left: 55%;
                 .circle {
                 width: 80%;
@@ -26,13 +26,13 @@
                     color:$title-color; 
                     display: inline-block; 
                     text-align: center; 
-                    font-size:25px;
+                    font-size:30px;
                     font-style: oblique;}
                 p {
                         color:$text-color; 
                         display: inline-block; 
                         text-align: justify; 
-                        font-size: 15px}
+                        font-size: 20px}
             }
                  }
     
@@ -62,12 +62,12 @@
                 border-radius: 100%; position: absolute;left: 30%;}
                 h2 {
                     font-style: oblique;
-                    font-size: 25px; 
+                    font-size: 30px; 
                     text-align: center; 
                     padding-bottom: 10px; 
                     color: $title-color;}
                 p {
-                    font-size: 15px; 
+                    font-size: 20px; 
                     text-align: justify; 
                     padding: 0px; 
                     color: $text-color;}
@@ -97,12 +97,12 @@
                 border-radius: 100%; position: absolute;left: 30%;}
                 h2{
                     font-style: oblique;
-                    font-size: 25px; 
+                    font-size: 30px; 
                     text-align: center;
                     padding-bottom: 10px; 
                     color: $title-color;}
                 p {
-                    font-size: 14px; 
+                    font-size: 20px; 
                     text-align: justify; 
                     padding: 0px; 
                     color: $text-color;}
